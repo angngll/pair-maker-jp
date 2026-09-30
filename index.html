@@ -3,12 +3,12 @@
 <head>
   <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="theme-color" content="#f6f4ef">
-  <meta name="description" content="二人のキャラクターの物語を一枚に。画像の調整から高画質PNGの保存まで。">
+  <meta name="description" content="二人のキャラクターのストーリーを一枚に。画像の調整から高画質PNGの保存まで。">
   <title>ペアシートメーカー</title>
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='9' fill='%233b5148'/%3E%3Ccircle cx='12' cy='16' r='7' fill='none' stroke='%23f8f3e8' stroke-width='2'/%3E%3Ccircle cx='21' cy='16' r='7' fill='none' stroke='%23b6c5b0' stroke-width='2'/%3E%3C/svg%3E">
   <link rel="stylesheet" href="fonts.css">
   <link rel="stylesheet" href="style.css?v=jp-2">
-  <script src="app.js?v=jp-2" defer></script>
+  <script src="app.js?v=jp-3" defer></script>
 </head>
 <body>
   <section id="ng-gate" class="ng-gate" aria-labelledby="ng-title">
@@ -30,12 +30,12 @@
   <main class="workspace">
     <aside class="editor" aria-label="ペアシート編集">
       <div class="editor-heading"><h1>ペアシートメーカー</h1></div>
-      <nav class="tabs" aria-label="編集項目"><button data-tab="a" class="active">キャラクターA</button><button data-tab="b">キャラクターB</button><button data-tab="story">関係・物語</button><button data-tab="design">デザイン</button></nav>
+      <nav class="tabs" aria-label="編集項目"><button data-tab="a" class="active">キャラクターA</button><button data-tab="b">キャラクターB</button><button data-tab="story">関係・ストーリー</button><button data-tab="design">デザイン</button></nav>
       <div id="panel"></div>
       <footer class="editor-footer"><span>作業内容はこのブラウザーに自動保存されます。</span><button id="slots-open">保存スロット（5件）</button><button id="backup">作業ファイルを保存</button><label class="file-button">作業を読み込む<input id="restore" type="file" accept=".json,application/json"></label><button id="reset-current">現在の作業を初期化</button></footer>
     </aside>
     <section class="preview-area" aria-label="リアルタイムプレビュー">
-      <div class="preview-toolbar"><div><span class="live-dot"></span> LIVE PREVIEW</div><span class="all-in-one">プロフィール＋会話＋物語を一枚に</span><button id="preview-size" title="プレビューのサイズ切り替え">拡大する ↗</button></div>
+      <div class="preview-toolbar"><div><span class="live-dot"></span> LIVE PREVIEW</div><span class="all-in-one">プロフィール＋会話＋ストーリーを一枚に</span><button id="preview-size" title="プレビューのサイズ切り替え">拡大する ↗</button></div>
       <div class="canvas-wrap"><canvas id="preview" role="img" aria-label="入力内容を反映したペアシートのプレビュー"></canvas></div>
       <p class="preview-caption"><span id="dimensions"></span><span>画像を選択：位置・サイズを調整</span></p>
     </section>
