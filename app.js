@@ -335,6 +335,8 @@ async function init(){
   if(stored){try{state=validateProject(stored);}catch{notice('保存済みの作業を読み込めませんでした。バックアップファイルを読み込んでください。');}}
   await loadAssets();try{await ensureFont(state.font);}catch{state.font='noto';await ensureFont('noto');notice('保存済みのフォントを読み込めず、Noto Sansで表示しています。');}renderPanel();draw();$('#save-status').textContent=stored?'保存済みの作業を復元しました':'自動保存の準備完了';registerBrowserTools();
 }
+$('#ng-agree').addEventListener('change',e=>{$('#ng-enter').disabled=!e.target.checked;});
+$('#ng-enter').addEventListener('click',()=>{if(!$('#ng-agree').checked)return;document.body.classList.add('ng-accepted');$('#ng-gate').hidden=true;$('#export-top').focus();});
 init();
 
 document.addEventListener('input',e=>{const t=e.target;if(t.dataset.groupSize){if(!t.value)return;state.groupSizes[t.dataset.groupSize]=Math.max(12,Math.min(100,Number(t.value)||30));change();}if(t.dataset.headingColor){state.highlights[t.dataset.headingColor]=t.value;change();}});

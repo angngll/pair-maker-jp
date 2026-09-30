@@ -7,10 +7,24 @@
   <title>ペアシートメーカー</title>
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='9' fill='%233b5148'/%3E%3Ccircle cx='12' cy='16' r='7' fill='none' stroke='%23f8f3e8' stroke-width='2'/%3E%3Ccircle cx='21' cy='16' r='7' fill='none' stroke='%23b6c5b0' stroke-width='2'/%3E%3C/svg%3E">
   <link rel="stylesheet" href="fonts.css">
-  <link rel="stylesheet" href="style.css?v=202d63e">
-  <script src="app.js?v=jp-1" defer></script>
+  <link rel="stylesheet" href="style.css?v=jp-2">
+  <script src="app.js?v=jp-2" defer></script>
 </head>
 <body>
+  <section id="ng-gate" class="ng-gate" aria-labelledby="ng-title">
+    <div class="ng-card">
+      <span class="ng-kicker">ご利用前にお読みください</span>
+      <h1 id="ng-title">[NG] 禁止事項</h1>
+      <p>このペアシートメーカーを利用する際は、以下の事項をお守りください。</p>
+      <ul>
+        <li>商用利用・悪意のある利用（政治的な利用など）</li>
+        <li>『鬼滅の刃』のキャラクター、および『鬼滅の刃』のオリジナルキャラクター（OC）での利用</li>
+        <li>完成画像の下部にある制作者表記「@Angngll」を削除・隠すこと</li>
+      </ul>
+      <label class="ng-check"><input id="ng-agree" type="checkbox"> 禁止事項を確認し、同意します。</label>
+      <button id="ng-enter" class="primary" disabled>同意して利用する</button>
+    </div>
+  </section>
   <header class="topbar"><a class="brand" href="./"><span class="brandmark">◉</span> Pair Maker<span class="edition"></span></a><div class="top-actions"><span id="save-status" role="status">読み込み中</span><button class="primary" id="export-top">PNGを書き出す <span aria-hidden="true">↗</span></button></div></header>
   <div class="mobile-switch" aria-label="作業画面"><button class="active" data-mobile="edit">編集する</button><button data-mobile="preview">プレビュー</button></div>
   <main class="workspace">

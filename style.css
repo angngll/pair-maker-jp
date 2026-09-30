@@ -29,6 +29,12 @@ input:not([type=range]):not([type=color]):not([type=checkbox]):not([type=file]),
 
 .slot-row{display:flex;flex-wrap:wrap;gap:8px;padding:16px 0;border-bottom:1px solid var(--line)}.slot-row strong,.slot-row span{width:100%}.slot-row span{font-size:12px}#slots-dialog{max-width:560px;width:calc(100% - 32px)}#slot-undo{margin-top:16px}
 
+body:not(.ng-accepted)>.topbar,body:not(.ng-accepted)>.mobile-switch,body:not(.ng-accepted)>.workspace{display:none}
+.ng-gate{min-height:100dvh;display:grid;place-items:center;padding:24px;background:radial-gradient(circle at 15% 10%,#ffe6f3,transparent 42%),radial-gradient(circle at 85% 85%,#e5efff,transparent 42%),#fbf7fc}
+.ng-gate[hidden]{display:none}
+.ng-card{width:min(100%,580px);padding:clamp(26px,5vw,42px);border:1px solid #ead9ee;border-radius:26px;background:#fffafd;box-shadow:0 20px 70px #9b7ba228;color:#574962;font-family:'PairNotoJP',sans-serif}
+.ng-kicker{font-size:12px;color:#ae88b7;letter-spacing:.08em}.ng-card h1{margin:14px 0 12px;font-size:27px;font-weight:700;color:#9f75ad}.ng-card p{font-size:14px;line-height:1.8}.ng-card ul{margin:22px 0;padding:0;list-style:none;display:grid;gap:10px}.ng-card li{padding:14px 16px;border-radius:13px;background:#f8f0f9;font-size:14px;line-height:1.65}.ng-card li::before{content:'×';font-weight:700;color:#b37caa;margin-right:10px}.ng-check{display:flex;align-items:center;gap:10px;margin:26px 0 18px;font-size:14px;line-height:1.5;cursor:pointer}.ng-check input{width:18px;height:18px;flex:none}.ng-card #ng-enter{width:100%;padding:15px;font-size:14px;border-radius:12px}.ng-card #ng-enter:disabled{opacity:.5;cursor:not-allowed}
+
 /* Mirror character B description fields to match its canvas cards. */
 textarea[data-path="b.personality"],textarea[data-path="b.appearance"],textarea[data-path="b.ng"]{text-align:right}
 .upload-card>.field{margin-top:10px;font-size:11px}
